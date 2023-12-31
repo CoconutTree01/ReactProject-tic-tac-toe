@@ -104,7 +104,7 @@
       if (isDraw) {
         return (
           <div className="game-info">
-            Ничья
+            Draw
           </div>
         )
       }
@@ -112,14 +112,14 @@
       if (winnerSymbol) {
         return (
           <div className="game-info">
-            Победитель: <GameSymbol symbol={winnerSymbol} />
+            Winner: <GameSymbol symbol={winnerSymbol} />
           </div>
         )
       }
 
       return (
         <div className="game-info">
-          Ход: <GameSymbol symbol={currentStep} />
+          Turn: <GameSymbol symbol={currentStep} />
         </div>
       )
     }
