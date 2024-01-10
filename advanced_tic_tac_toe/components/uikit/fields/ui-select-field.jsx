@@ -30,3 +30,19 @@ export function UiSelectField({
     </div>
   );
 }
+
+export function UiSelectSecondField({
+  label,
+  helperText,
+  errorText,
+  className,
+  options,
+}) {
+  return (
+    <div className={className}>
+      <UiFieldLabel label={label}/>
+      <UiSelect className="mt-1" options={options} />
+      <UiFieldMessage helperText={helperText} errorText={errorText} />
+    </div>
+  );
+}

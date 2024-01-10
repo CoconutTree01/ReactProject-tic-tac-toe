@@ -1,7 +1,7 @@
 import { Header } from "../components/header";
 import { Game } from "../components/game-new";
 import { UiTextField } from "../components/uikit/fields/ui-text-field";
-import { UiSelectField } from "../components/uikit/fields/ui-select-field";
+import { UiSelectField, UiSelectSecondField } from "../components/uikit/fields/ui-select-field";
 
 export default function HomePage() {
   return (
@@ -12,8 +12,17 @@ export default function HomePage() {
         required
         helperText="Helper text"
         options={[
-          { label: "Первый label", value: 1 },
-          { label: "Второй label", value: 2 },
+          { label: "First label", value: 1 },
+          { label: "Second label", value: 2 },
+        ]}
+      />
+      <UiSelectSecondField
+        label="Players"
+        placeholder="Placeholder"
+        helperText="Choose player"
+        options={[
+          { label: "First Player", value: 1 },
+          { label: "Second Player", value: 2 },
         ]}
       />
     </HomePageLayout>

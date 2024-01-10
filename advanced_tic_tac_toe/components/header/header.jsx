@@ -10,12 +10,18 @@ export function Header() {
       <Image src={logoSrc} alt="logo" />
       <div className="w-px h-8 bg-slate-200 mx-6" />
       <UiButton className="w-44" variant="primary" size="lg">
-        Играть
+        Play
       </UiButton>
-      <button className="ml-auto flex items-center gap-2 text-start text-teal-600 ">
-        <Profile name="Paromovevg" rating="1230" />
-        <ArrowDownIcon />
-      </button>
+      <div className="ml-auto flex items-center gap-4 text-start text-teal-600 ">
+        <button className="flex items-center gap-2">
+          <Profile name="TestUser" rating="1230" />
+          <ArrowDownIcon />
+        </button>
+        <button className="flex items-center gap-2">
+          <Profile name="Olegs" rating="1230" />
+          <ArrowDownIcon />
+        </button>
+      </div>
     </header>
   );
 }

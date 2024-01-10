@@ -14,7 +14,7 @@ export function Profile({ className, name, rating, avatar = avatarSrc }) {
       <div className="overflow-hidden">
         <div className=" text-lg leading-tight truncate ">{name}</div>
         <div className="text-slate-400 text-xs leading-tight">
-          Рейтинг: {rating}
+          rank: {rating}
         </div>
       </div>
     </div>

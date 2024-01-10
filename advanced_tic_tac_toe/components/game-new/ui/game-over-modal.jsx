@@ -11,7 +11,7 @@ export function GameOverModal({ winnerName, players }) {
       <UiModal.Header>Игра завершена!</UiModal.Header>
       <UiModal.Body>
         <div className="text-sm">
-          Победитель: <span className="text-teal-600">{winnerName}</span>
+          Winner: <span className="text-teal-600">{winnerName}</span>
         </div>
         <div className="justify-between grid grid-cols-2 gap-3 mt-2">
           {players}
@@ -22,7 +22,7 @@ export function GameOverModal({ winnerName, players }) {
           Вернуться
         </UiButton>
         <UiButton size="md" variant="primary">
-          Играть снова
+          Play Again
         </UiButton>
       </UiModal.Footer>
     </UiModal>

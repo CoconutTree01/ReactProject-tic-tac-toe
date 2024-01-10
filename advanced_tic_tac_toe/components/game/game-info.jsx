@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 const players = [
   {
     id: 1,
-    name: "Paromovevg",
+    name: "Olegs",
     rating: 1230,
     avatar: avatarSrc1,
     symbol: GAME_SYMBOLS.CROSS,
